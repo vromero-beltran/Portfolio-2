@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="scriptesheet" href="../HomePage/HPscript.js">
         <title>Victor's Portfolio</title>
         <link rel="stylesheet" href="../Homepage/HPstyle.css">
+        <script src="https://kit.fontawesome.com/89fb98b415.js" crossorigin="anonymous"></script>
     </head>
-    <body id="header">
-        <div class="container">
+    <body>
+        <div class="container" id="header">
             <nav>
                 <img src="../Images/logo.png" class="logo">
                 <ul>
@@ -40,9 +40,125 @@
                             and will graduate on the 17th of January. I am currently 
                             a Junior Front-End Developer as of the 24th of Augest 
                             according to the skills learned during the Coding Bootcamp.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front-End Developer</span><br>● HTML/CSS/Git
+                                        ● JavaScript
+                                        ● Bootstrap
+                                        ● The DOM
+                                        ● APIs
+                                        ● JQuery
+                                        ● JSON
+                                        ● AJAX
+                                        ● Team collaboration
+                                        ● Agile development
+                                        ● Project
+                                        demonstration
+                                        and storytelling
+                                        ● Node
+                                        ● ES6
+                                        ● Object-oriented
+                                        programming
+                                        ● Express
+                                        ● MySQL
+                                        ● MVC paradigm
+                                        ● Sequelize
+                                        ● Testing
+                                        ● Agile development
+                                        ● Team collaboration
+                                        ● Agile development
+                                        ● Project
+                                        demonstration
+                                        and storytelling
+                                        ● Progressive Web
+                                        Apps
+                                        ● React
+                                        ● NoSQL
+                                        ● MERN Stack
+                                        ● Computer science
+                                        fundamentals
+                                        ● Dreaming up
+                                        something fantastic
+                                        ● Understanding
+                                        the bounds of
+                                        reasonable and
+                                        achievable
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023 - Current</span><br>● Bootcamp Coding</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2024</span><br>● Full-Stack Developer</li>
+                                </ul>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body id="header">
+<!---------services------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-html5"></i>
+                        <h2>HTML</h2>
+                        <p>- Create responsive websites using HTML</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h2>CSS</h2>
+                        <p>- Make websites look more appealing than just plain</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-js"></i>
+                        <h2>JavaScript</h2>
+                        <p>- Build dynamic and interactive web pages using 
+                            Front-End and Back-End.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!---------Portfolio------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="../images/project1.png" alt="Project 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+}
+        </script>
+        <link rel="scriptesheet" href="../HomePage/HPscript.js">
+    </body>
 </html>
