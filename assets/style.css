@@ -209,12 +209,15 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 .work {
+    height: 300px;
+    width: 300px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
 .work img {
+    height: 80%;
     width: 100%;
     border-radius: 10px;
     display: block;
