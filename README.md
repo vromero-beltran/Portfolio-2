@@ -1,7 +1,7 @@
 # Profolio
 
   ## Description
-  Showcase my skills, experience, work, a little bit about me, and a contact section to contact me through email, phone number, or google sheets. Also includes a cover letter in the Contact Me section to download. If you can't download it for any reason just contact me directly through any means available to you.
+  Showcase my skills, experience, work, a little bet about me, and a contact section to contact me through email, phone number, or google sheets. Also includes a cover letter in the Contact Me section to download. If you can't download it for any reason just contact me directly through any means available to you.
   ## Table Of Contents
   - [Installation](#installation)
   - [Usage](#usage)
