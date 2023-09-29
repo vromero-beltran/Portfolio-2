@@ -17,7 +17,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(./Images/Restaurantpic.jpeg);
+    background-image: url(../Images/Restaurantpic.JPEG);
     background-repeat: no-repeat;
     background-position: 88% 50%;
     border-radius: 15px;
